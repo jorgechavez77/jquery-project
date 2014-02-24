@@ -19,12 +19,4 @@ public class AjaxServlet extends HttpServlet {
 		System.out.println(message);
 	}
 
-	@Override
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
-			throws ServletException, IOException {
-		String message = req.getParameter("message");
-		System.out.println(message);
-		super.doGet(req, resp);
-	}
-
 }

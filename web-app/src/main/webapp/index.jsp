@@ -16,7 +16,7 @@
 	});
 	function sendData() {
 		var mge = $('#newText').val();
-		alert(mge);
+		console.log(mge);
 		$.ajax({
 			type : "POST",
 			url : "ajaxServlet",
@@ -24,10 +24,10 @@
 				message : mge
 			}
 		}).done(function(msg) {
-			alert("Data Saved: " + msg);
+			console.log("Data Saved: " + msg);
 		});
 	}
-	setInterval("alert('OK')", 5000);
+	setInterval("sendData()", 10000);
 </script>
 
 </head>
